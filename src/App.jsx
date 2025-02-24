@@ -4,8 +4,7 @@ import alexLogo2 from './assets/091.png'
 import spicywords from './assets/SPICYWORDS.png'
 import alexLogo1 from '/SPICYSTUDIOSWHITE.png'
 import nutshell from './assets/inanutshell.png'
-import spicy2 from './assets/SPICYSTUDIOSSTAR2.png'
-import spicy3 from './assets/SPICYSTUDIOSSTAR3.png'
+
 
 import './App.css'
 import './index.css'
@@ -46,12 +45,7 @@ function App() {
 </ul>
 
 </nav>
-  <a>
-    <img src={spicy3} className="spicy2" alt="wire2" />
-  </a>
-  <a>
-    <img src={spicy2} className="spicy1" alt="wire1" />
-  </a>
+
      
   <div className="container">
     <div className="contalex">

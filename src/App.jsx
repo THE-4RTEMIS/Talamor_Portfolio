@@ -57,29 +57,6 @@ function App() {
 </header>
 
 
-      <div class="word">
-      <div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-
-<div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-</div>
-
-
 <div className='aboutsec' id='aboutsection'>
   <div className="about-content">
     <h1 className='about'>

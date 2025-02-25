@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import alexLogo from './assets/SPICYSTUDIOSLOGO.png'
+import alexLogo2 from './assets/091.png'
+import spicywords from './assets/SPICYWORDS.png'
 import alexLogo1 from '/SPICYSTUDIOSWHITE.png'
 import nutshell from './assets/inanutshell.png'
-import spicy1 from './assets/SPICYSTUDIOSSTAR1.png'
 import spicy2 from './assets/SPICYSTUDIOSSTAR2.png'
-
-
-
+import spicy3 from './assets/SPICYSTUDIOSSTAR3.png'
 
 import './App.css'
 import './index.css'
@@ -40,8 +39,6 @@ function App() {
     <img src={alexLogo1} className="logoalex" alt="logo alex" />
   </a>
 
-
-
 <ul class="list">
 <li><a href="#" onClick={scrollToAbout}>About</a></li>
 <li><a href="#">Projects</a></li>
@@ -49,30 +46,45 @@ function App() {
 </ul>
 
 </nav>
-
+  <a>
+    <img src={spicy3} className="spicy2" alt="wire2" />
+  </a>
+  <a>
+    <img src={spicy2} className="spicy1" alt="wire1" />
+  </a>
      
   <div className="container">
     <div className="contalex">
-
-    <a href="#">
-        <img src={spicy1} className="spicy1"  />
-     </a>
-
       <a href="#">
         <img src={alexLogo} className="logo alex" alt="Alex Logo" />
       </a>
-
-
-      <a href="#">
-        <img src={spicy2} className="spicy2"  />
-     </a>
-     
-  
-
     </div>
   </div>
+</header>
 
-  </header>
+
+      <div class="word">
+      <div class="word-slide">
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+</div>
+
+<div class="word-slide">
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+<img src={spicywords} className="word" />
+</div>
+</div>
+
 
 <div className='aboutsec' id='aboutsection'>
   <div className="about-content">
@@ -104,9 +116,9 @@ function App() {
 
 <div className="nutshell">
 <h1 className="nutshell-heading">
- IN A NUTSHELL
+  <span className="ina">IN A</span>
+  <span className="nut">NUTSHELL</span>
 </h1>
-
   <img src={nutshell}  alt="logo alex" />
 </div>
 

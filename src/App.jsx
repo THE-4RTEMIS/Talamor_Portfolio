@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import alexLogo from './assets/SPICYSTUDIOSLOGO.png'
-import alexLogo2 from './assets/091.png'
-import spicywords from './assets/SPICYWORDS.png'
 import alexLogo1 from '/SPICYSTUDIOSWHITE.png'
 import nutshell from './assets/inanutshell.png'
 import spicy1 from './assets/SPICYSTUDIOSSTAR1.png'
 import spicy2 from './assets/SPICYSTUDIOSSTAR2.png'
+
+
 
 
 import './App.css'
@@ -49,7 +49,7 @@ function App() {
 </ul>
 
 </nav>
- 
+
      
   <div className="container">
     <div className="contalex">
@@ -73,29 +73,6 @@ function App() {
   </div>
 
   </header>
-
-      <div class="word">
-      <div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-
-<div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-</div>
-
 
 <div className='aboutsec' id='aboutsection'>
   <div className="about-content">

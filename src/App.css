@@ -336,6 +336,7 @@ overflow: hidden;
 .aboutme {
   position: relative;
   left: 110px;
+  font-color: white;
   max-width: 900px; /* Limits the width for better readability */
   line-height: 1.6; /* Increases spacing between lines */
   font-size: 1.2rem; /* Adjust the text size */

@@ -46,12 +46,7 @@ function App() {
 </ul>
 
 </nav>
-  <a>
-    <img src={spicy3} className="spicy2" alt="wire2" />
-  </a>
-  <a>
-    <img src={spicy2} className="spicy1" alt="wire1" />
-  </a>
+
      
   <div className="container">
     <div className="contalex">
@@ -63,27 +58,6 @@ function App() {
 </header>
 
 
-      <div class="word">
-      <div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-
-<div class="word-slide">
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-<img src={spicywords} className="word" />
-</div>
-</div>
 
 
 <div className='aboutsec' id='aboutsection'>

@@ -88,14 +88,17 @@ nav {
   position: absolute;
   top: 48%;
 
-  left: 57%;
+  left: 55.5%;
   transform: translate(-50%, -50%); /* Centers the element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjusts spacing between elements */
 }
-
 .spicy1 {
   position: relative;
-  bottom: -60px;
-  left: 1125px;
+left: 1550px;
+top: 250px;
   height: 25em;
   transform: rotate(50deg);
   will-change: filter, transform;
@@ -121,9 +124,8 @@ nav {
 .spicy2 {
   display: flex;
   position: relative;
-  top: -40px;
-  left: 80px;
-
+right: 1800px;
+top: -200px;
   height: 22em;
   transform: rotate(10deg);
   will-change: filter, transform;
@@ -183,7 +185,7 @@ h2 {
   height: 50%;
   width: 100%;
   position: relative;
-
+overflow: hidden;
   z-index: 111;
 
   /* Drop Shadow at the Bottom */
@@ -249,6 +251,7 @@ h2 {
   top: -200px;
   padding: 20px;
   font-size: 1rem;
+  overflow: hidden;
 }
 
 /* Container for text */
@@ -374,6 +377,7 @@ margin-bottom: 120px;
   height: 100vh;
   width: 100%;
   z-index: 1111;
+
  
 
   /* Add a subtle drop shadow */
@@ -382,39 +386,27 @@ margin-bottom: 120px;
 
 .nutshell-heading {
   display: flex;
-  justify-content: space-between; /* Pushes elements to opposite ends */
+position: absolute;
+margin-top: -520px;
+left: 130px;
   align-items: center; /* Aligns them vertically */
   width: 80%;
-
-  z-index: 11;
+font-size: 3rem;
+font-family: stretch;
+color: white;
+  z-index: 111;
 }
 
-.ina {
-  position: relative;
-  top: -70px;
-  font-family: stretch;
-  font-size: 5rem;
-  font-weight: bold;
-  color: rgb(255, 255, 255); /* Adjust color as needed */
-}
-
-.nut {
-  position: relative;
-  left: 200px;
-  top: -70px;
-  font-family: stretch;
-  font-size: 5rem;
-  font-weight: bold;
-  color: rgb(255, 255, 255); /* Adjust color as needed */
-}
 
 .nutshell img {
+  position: relative;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5); /* Adjust shadow intensity */
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
+  border-radius: 80px;
+  
   max-width: 100%; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
+
 }
 
 

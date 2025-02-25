@@ -44,6 +44,7 @@ header {
 background-color: #000000;
   background-position: 10px  ; /* Adjusts the position */
   background-size: cover; /* Ensures it covers the whole header */
+  overflow: hidden;
   background-attachment: fixed; /* Optional: Keeps it fixed when scrolling */
   z-index: 11111;
 }

@@ -90,8 +90,7 @@ function App() {
 
 <div className="nutshell">
 <h1 className="nutshell-heading">
-  <span className="ina">IN A</span>
-  <span className="nut">NUTSHELL</span>
+IN A NUTSHELL
 </h1>
   <img src={nutshell}  alt="logo alex" />
 </div>

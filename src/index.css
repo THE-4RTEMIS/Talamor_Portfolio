@@ -46,6 +46,8 @@ background-color: #000000;
   background-size: cover; /* Ensures it covers the whole header */
   overflow: hidden;
   background-attachment: fixed; /* Optional: Keeps it fixed when scrolling */
+  border-bottom-left-radius: 80px; /* Adjust as needed */
+  border-bottom-right-radius: 80px;
   z-index: 11111;
 }
 

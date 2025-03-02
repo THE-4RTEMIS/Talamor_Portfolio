@@ -95,6 +95,20 @@ nav {
   align-items: center;
   gap: 20px; /* Adjusts spacing between elements */
 }
+
+
+.contalex img{
+  width: 150%;
+  
+}
+
+
+
+
+
+
+
+
 .spicy1 {
   position: relative;
 left: 1550px;

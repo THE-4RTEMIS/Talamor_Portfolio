@@ -11,7 +11,7 @@ body{
   height: 50em;
   padding: 1.5em;
   will-change: filter;
-  filter: drop-shadow(0 0 10em #afafaf85);
+  filter: drop-shadow(0 0 10em #a0a0a075);
   transition: filter 1000ms;
   
 }
@@ -24,6 +24,7 @@ body{
   top: -4px;
   left: 90px;
   height: 7em;
+  z-index: 11;
 
 }
 
@@ -43,28 +44,70 @@ body{
 }
 
 
+
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 11;
+}
+
+.menu-icon span,
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+  background: white;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.menu-icon::before {
+  top: 0;
+}
+.menu-icon::after {
+  bottom: 0;
+}
+.menu-icon span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 nav {
  
 
- left: 50%;
 
+position: fixed;
   transform: translate(-50%, );
   width: 100%; /* Adjust width based on content */
-  height: 100px;
-  padding:5px 5px 5px 5px;
+  height: 70px;
+  padding:10px 2px 2px 2px;
   
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: 0.3s ease-out;
   
   background: rgba(0, 0, 0, 0);
 
+  border-radius: 10px;
+font-family: stretch;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 16px;
   overflow-y: hidden;
-
+z-index: 111;
 
 }
 .list {
@@ -83,19 +126,157 @@ nav {
   margin-left: 60px;
 }
 
-
-.contalex {
-  position: absolute;
-  top: 48%;
-
-  left: 57%;
-  transform: translate(-50%, -50%); /* Centers the element */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Slight movement for a smooth effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+  nav {
+ 
+z-index: 11;
+
+    
+    }
+
+
+
+
+
+
+
+
+  .list {
+    display: none;
+    flex-direction: column;
+    background: rgba( 0, 0, 0, 0.3 );
+    
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: -40px;
+   left: 0.5px;
+   height: 100vh;
+    width: 100vw;
+    border-radius: 5px;
+    padding: 15px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 11;
+    font-family:stretch;
+    
+  }
+
+  .list li {
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    left: -20px;
+    
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .menu-icon + .list {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    visibility: visible;
+  }
+/* Fade-out when unchecked */
+#menu-toggle:not(:checked) + .menu-icon + .list {
+  opacity: 0;
+  visibility: hidden;
+}
+  /* Show the hamburger icon */
+  .menu-icon {
+    display: block;
+    position: relative;
+    right: 100px;
+    z-index: 1111;
+  }
+ .logoalex{
+  z-index: 1111;
+ }
+  /* Animate Hamburger to 'X' when active */
+  #menu-toggle:checked + .menu-icon span {
+    background: transparent;
+  }
+
+  #menu-toggle:checked + .menu-icon::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  #menu-toggle:checked + .menu-icon::after {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+
+
+
+
+}
+.contalex {
+  position: absolute;
+  top: 50%;
+  left: 57%;
+ 
+  transform: translate(-50%, -50%); /* Centers the element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjusts spacing between elements */
+}
+
+
+
+@media (max-width: 1000px) {
+.logo{
+width: 100vw;
+height: 100vh;
+margin-left: 130px;
+
+  }
+}
+
+  
+@media (max-width: 700px) {
+  .logo{
+  width: 120vw;
+  height: 50vh;
+  
+  
+    }
+  }
+  
+
+
+
+
+
 .spicy1 {
-  position: relative;
-  bottom: -60px;
-  left: 1125px;
+  position: absolute;
+left: -370px;
+top: 50px;
   height: 25em;
   transform: rotate(50deg);
   will-change: filter, transform;
@@ -120,10 +301,9 @@ nav {
 
 .spicy2 {
   display: flex;
-  position: relative;
-  top: -40px;
-  left: 80px;
-
+  position: absolute;
+right: -50px;
+top: 420px;
   height: 22em;
   transform: rotate(10deg);
   will-change: filter, transform;
@@ -143,6 +323,31 @@ nav {
     transform: rotate(10deg) translateY(15px); 
   }
 }
+
+
+
+@media (max-width: 1000px) {
+  .spicy1{
+
+  display: none;
+    }
+  }
+
+
+  @media (max-width: 1000px) {
+    .spicy2{
+  
+    display: none;
+      }
+    }
+    
+
+
+
+
+
+
+
 h1 {
   position: relative;
   top: 230px;
@@ -183,7 +388,7 @@ h2 {
   height: 50%;
   width: 100%;
   position: relative;
-
+overflow: hidden;
   z-index: 111;
 
   /* Drop Shadow at the Bottom */
@@ -249,6 +454,7 @@ h2 {
   top: -200px;
   padding: 20px;
   font-size: 1rem;
+  overflow: hidden;
 }
 
 /* Container for text */
@@ -333,6 +539,7 @@ h2 {
 .aboutme {
   position: relative;
   left: 110px;
+  color: white;
   max-width: 900px; /* Limits the width for better readability */
   line-height: 1.6; /* Increases spacing between lines */
   font-size: 1.2rem; /* Adjust the text size */
@@ -364,17 +571,24 @@ margin-bottom: 120px;
 
 .nutshell {
   position: relative;
-  top: -80px;
+top: -300px;
   display: flex;
   background-color: BLACK;
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
   text-align: center; /* Center text */
-  height: 100vh;
+  height: 180vh;
   width: 100%;
   z-index: 1111;
- 
+overflow: hidden;
+border-top-left-radius: 80px; /* Adjust as needed */
+border-top-right-radius: 80px;
+   /* Background image properties */
+   background-image: url('./assets/inanutshell.png'); /* Set background image */
+   background-size: cover; /* Make sure the image covers the whole div */
+   background-position: center; /* Center the background */
+   background-repeat: no-repeat; /* Prevent repeating */
 
   /* Add a subtle drop shadow */
   box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5); /* Adjust shadow intensity */
@@ -382,39 +596,46 @@ margin-bottom: 120px;
 
 .nutshell-heading {
   display: flex;
-  justify-content: space-between; /* Pushes elements to opposite ends */
+position: absolute;
+margin-top: -370px;
+margin-left: 450px;
   align-items: center; /* Aligns them vertically */
   width: 80%;
+font-size: 5rem;
+font-family: stretch;
+color: white;
+  z-index: 111;
+ 
 
-  z-index: 11;
 }
 
-.ina {
-  position: relative;
-  top: -70px;
-  font-family: stretch;
-  font-size: 5rem;
-  font-weight: bold;
-  color: rgb(255, 255, 255); /* Adjust color as needed */
-}
-
-.nut {
-  position: relative;
-  left: 200px;
-  top: -70px;
-  font-family: stretch;
-  font-size: 5rem;
-  font-weight: bold;
-  color: rgb(255, 255, 255); /* Adjust color as needed */
-}
 
 .nutshell img {
+  position: relative;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5); /* Adjust shadow intensity */
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
+  border-radius: 80px;
+  
   max-width: 100%; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
+
 }
 
 
+.ewan{
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; /* Centering vertically */
+  left: 50%; /* Centering horizontally */
+  transform: translate(-50%, -50%); /* Adjusting for exact centering */
+  width: 100%; /* Adjust as needed */
+  height: 110%; /* Adjust as needed */
+  max-width: 100%; /* Ensures it stays responsive */
+  z-index: 9999; /* Ensures it appears above the background */
+  pointer-events: none; /* Makes sure it doesn't interfere with user interactions */
+}

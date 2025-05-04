@@ -84,10 +84,16 @@ const Projects = () => {
   </NavLink>
   </li>
 
+  <li>
+  <NavLink
+    to="/Experience">EXPERIENCE
+  </NavLink>
+  </li>
 
 
 
-    <li><a href="#">CONTACT</a></li>
+
+   
     
   </ul>
 </nav>
@@ -130,10 +136,12 @@ const Projects = () => {
         <h4 className="blogcard__header">Arrival in Manila.</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-              Not much happened. Stayed in a room with people idk lol.
+              SM MOA + DJM Dorm
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog1" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -143,10 +151,12 @@ const Projects = () => {
         <h4 className="blogcard__header">Subic Extravaganza.</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-            Explored a part of subic that is uninhabited by locals.
+            SBMA Law Enforcement Dept. + SBMA Seaport Dept.
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog2" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -161,10 +171,12 @@ const Projects = () => {
         <h4 className="blogcard__header">Museum Date.</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-            My creative ahh is happy. Eventhough i was not able to see the spoliarium. I need to come back here.
+            Museo ni Manuel Quezon + National Museum of Natural History
             </p>
           </div>
-          <button className="blogcard__btn" style={{ marginTop: '70px' }}>Explore <span>&rarr;</span></button>
+          <NavLink to="/blog3" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -174,10 +186,12 @@ const Projects = () => {
           <h4 className="blogcard__header">A bank and a tech comp.</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-              There's not much pics in here since it was not allowed.
+              Bangko Sentral ng Pilipinas + Hytec Power Inc.
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog4" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -187,10 +201,12 @@ const Projects = () => {
       <h4 className="blogcard__header">FAVORITE VISIT</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-            SRR 8, LRT. THAT'S IT.
+            Traffic Engineering Center + LRT 2
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog5" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -201,10 +217,12 @@ const Projects = () => {
           <h4 className="blogcard__header">The cold and the hot room</h4>
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-             First time in baguio. I will comeback for sure.
+             Strawberry Farm + Chinese Bell Church + PMA..
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog6" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 
@@ -216,10 +234,12 @@ const Projects = () => {
   
           <div className="blogcard__text-wrapper">
             <p className="blogcard__text">
-            Got drunk with jaden and people i do not know. It was fun for a last day.
+            Back to Manila
             </p>
           </div>
-          <button className="blogcard__btn">Explore <span>&rarr;</span></button>
+          <NavLink to="/blog7" className="blogcard__btn">
+  Read More <span>&rarr;</span>
+</NavLink>
         </div>
       </div>
 

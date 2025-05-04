@@ -81,11 +81,17 @@ const Hero = () => {
   </NavLink>
   </li>
 
+  <li>
+  <NavLink
+    to="/Experience">EXPERIENCE
+  </NavLink>
+  </li>
 
 
 
 
-    <li><a href="#">CONTACT</a></li>
+
+ 
     
   </ul>
 </nav>
@@ -111,7 +117,7 @@ const Hero = () => {
 <br></br>
 <br></br>
 
-<div className='aboutsec' id='aboutsection'>
+<div className='aboutsec' id='aboutsection' >
   <div className="about-content">
     <h1 className='about0' id='about1'>
       You're looking at <span className='about1' >thee most fly Assian</span>, straight up.
@@ -149,11 +155,6 @@ const Hero = () => {
 
 </div>
 
-<div className="nutshell">
-
-
-  
-</div>
 
 
     </>

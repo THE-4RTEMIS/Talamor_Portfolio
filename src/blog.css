@@ -551,8 +551,34 @@ height: 90%;
   
 
     .bloggrid  {
-      margin-left: 200px;
-      width: fit-content;
+      margin-left: 250px;
+   
+
+    }
+  }
+
+
+  @media screen and (max-width: 440px) {
+  
+  
+
+    .bloggrid  {
+      margin-left: 280px;
+   
+
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 410px) {
+  
+  
+
+    .bloggrid  {
+      margin-left: 300px;
+   
 
     }
   }

@@ -4,6 +4,14 @@ import Hero from "./components/Hero.jsx";
 import Projects from "./components/Projects.jsx";
 import About from "./components/About.jsx";
 import Blog from "./components/Blogs.jsx";
+import Blog1 from "./components/Blog1.jsx";
+import Blog2 from "./components/Blog2.jsx";
+import Blog3 from "./components/Blog3.jsx";
+import Blog4 from "./components/Blog4.jsx";
+import Blog5 from "./components/Blog5.jsx";
+import Blog6 from "./components/Blog6.jsx";
+import Blog7 from "./components/Blog7.jsx";
+import Experience from "./components/Experience.jsx";
 
 
 function App() {
@@ -16,6 +24,14 @@ function App() {
   <Route path="/About" element={<About />} />
   <Route path="/Blog" element={<Blog />} />
   <Route path="/Projects" element={<Projects />} />
+  <Route path="/Blog1" element={<Blog1 />} />
+  <Route path="/Blog2" element={<Blog2 />} />
+  <Route path="/Blog3" element={<Blog3 />} />
+  <Route path="/Blog4" element={<Blog4 />} />
+  <Route path="/Blog5" element={<Blog5 />} />
+  <Route path="/Blog6" element={<Blog6 />} />
+  <Route path="/Blog7" element={<Blog7 />} />
+  <Route path="/Experience" element={<Experience />} />
 </Routes>
     </div>
   );

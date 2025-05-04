@@ -53,12 +53,11 @@ body{
 
 /* Hamburger Icon */
 .menu-icon {
-  display: none;
+  position: fixed; /* Keep it on top regardless of scroll */
+  top: -5px;
+  right: 20px;
+  z-index: 2000; /* Must be above .list (z-index: 11) */
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 11;
 }
 
 .menu-icon span,
@@ -70,6 +69,7 @@ body{
   height: 4px;
   width: 100%;
   position: absolute;
+  z-index: 2001;
   transition: 0.3s;
 }
 
@@ -85,9 +85,6 @@ body{
 }
 
 nav {
- 
-
-
 position: fixed;
   transform: translate(-50%, );
   width: 100%; /* Adjust width based on content */
@@ -107,7 +104,7 @@ font-family: stretch;
   color: white;
   font-size: 16px;
   overflow-y: hidden;
-z-index: 111;
+z-index: 111111;
 
 }
 .list {
@@ -209,6 +206,7 @@ z-index: 11;
     display: flex;
     animation: fadeIn 0.3s ease-in-out forwards;
     visibility: visible;
+    
   }
 /* Fade-out when unchecked */
 #menu-toggle:not(:checked) + .menu-icon + .list {
@@ -228,6 +226,8 @@ z-index: 11;
   /* Animate Hamburger to 'X' when active */
   #menu-toggle:checked + .menu-icon span {
     background: transparent;
+    z-index: 1000;
+    
   }
 
   #menu-toggle:checked + .menu-icon::before {
@@ -480,8 +480,7 @@ overflow: hidden;
 
 /*about me*/
 .aboutsec {
-  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.8), rgb(61, 46, 18), rgb(0, 0, 0)),
-              url(https://grainy-gradients.vercel.app/noise.svg);
+
   filter: contrast(150%);
   background-blend-mode: overlay;
   display: block; /* Enables flexbox */

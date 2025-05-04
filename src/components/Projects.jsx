@@ -106,10 +106,15 @@ const Projects = () => {
 
 
 
+  <li>
+  <NavLink
+    to="/Experience">EXPERIENCE
+  </NavLink>
+  </li>
 
 
 
-    <li><a href="#">CONTACT</a></li>
+
     
   </ul>
 </nav>

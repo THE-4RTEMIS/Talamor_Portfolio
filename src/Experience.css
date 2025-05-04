@@ -1,0 +1,209 @@
+
+  
+  h2 {
+    margin: 3em 0 0 0;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* -------------------------------------
+   * timeline
+   * ------------------------------------- */
+  #timeline {
+    list-style: none;
+    margin: 50px 0 30px 120px;
+    padding-left: 30px;
+    border-left: 8px solid #ffffff;
+  }
+  #timeline li {
+    margin: 40px 0;
+    position: relative;
+  }
+  #timeline p {
+    margin: 0 0 15px;
+    overflow-y: auto;
+  }
+  
+  .date {
+    margin-top: -10px;
+    top: 50%;
+    left: -158px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
+    white-space: nowrap; /* Prevents breaking in larger screens */
+  }
+  
+  @media (max-width: 500px) {
+    .date {
+      position: relative; /* Changes position from absolute to relative */
+      left: 0; /* Resets the left offset */
+      top: auto; /* Removes top positioning */
+      margin-top: 10px; /* Adds spacing between stacked elements */
+      white-space: normal; /* Allows text to wrap and stack */
+    }
+  }
+  
+  .circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -45px;
+    width: 20px;
+    height: 20px;
+    background: #5e7cff;
+    border: 5px solid #eee9dc;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow-y: hidden;
+    padding: 50px 20px 0;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5em;
+    position: relative;
+    font-size: clamp(0.5rem, 1vw + 0.2rem, 1.1rem);
+    transition: max-height 0.5s ease, padding 0.3s ease;
+  }
+  .content:before, .content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+  }
+  .content:before {
+    border-right-color: inherit;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .content:after {
+    content: "";
+    position: absolute;
+    left: -34px; /* distance to the left of .content, adjust as needed */
+    top: 50%;
+    margin-top: -17px;
+    border-width: 17px;
+    border-style: solid;
+    border-color: white;
+    border-right-color: #ffffff; /* red arrow */
+  }
+  .content p {
+    max-height: 0;
+
+    color: transparent;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
+    overflow-y:scroll;
+    transition: max-height 0.5s ease, color 0.5s ease;
+  }
+  label {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.3em);
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 20px;
+    transition: transform 0.2s linear;
+    white-space: nowrap; /* Keeps the text on one line by default */
+    word-break: break-word; /* Breaks the word if necessary */
+  }
+  .radio {
+    display: none;
+  }
+  
+  .radio:checked + .relative label {
+    cursor: auto;
+    transform: translateX(42px);
+  }
+  .radio:checked + .relative .circle {
+    background: #f96262;
+  }
+  input:checked ~ .content {
+    max-height: 1000px; /* large enough to accommodate full content */
+    padding: 50px 20px 0;
+    border-color: #ffffff; /* show border if needed */
+    transition: max-height 0.5s ease;
+  }
+
+
+
+
+
+
+
+  .radio:checked ~ .content p {
+    max-height: 200px;
+    color: #ffffff;
+    overflow: hidden;
+    font-size: clamp(0.5rem, 1vw + 0.5rem, 1.1rem); /* this is the clamp */
+    line-height: 1.6;
+    transition: color 0.3s linear 0.3s;
+  }
+  
+
+
+  .ewan1{
+
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 3em 1em;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+    
+  .divbody {
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 6rem;
+    background-color: #000000;
+  
+  }
+  @media (max-width: 60em) {
+    .divbody {
+      padding: 3rem;
+    }
+  }
+
+
+
+  @media (max-width: 500px) {
+    .content {
+      width: 370px;
+    }
+  }
+
+
+
+  @media (max-width: 500px) {
+    .divbody{
+        margin-left: -50px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  

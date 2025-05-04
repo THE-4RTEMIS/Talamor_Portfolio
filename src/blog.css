@@ -1,0 +1,568 @@
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+
+
+
+  @font-face {
+    font-family: 'stretch';
+    src: url('/src/fonts/StretchPro.otf') format('opentype');
+  }
+  
+  
+  @media (max-width: 450px) {
+  .aboutme{
+    font-size: 1rem;
+  }
+  }
+
+
+
+
+
+.logoalex {
+    position: relative;
+    top: -4px;
+    left: 90px;
+    height: 7em;
+    z-index: 11;
+    filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.5));
+  }
+
+
+
+  
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+  }
+  
+  /* Hamburger Icon */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 11;
+  }
+  
+  .menu-icon span,
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    display: block;
+    background: white;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    transition: 0.3s;
+  }
+  
+  .menu-icon::before {
+    top: 0;
+  }
+  .menu-icon::after {
+    bottom: 0;
+  }
+  .menu-icon span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  nav {
+   
+  
+  
+  position: fixed;
+    transform: translate(-50%, );
+    width: 100%; /* Adjust width based on content */
+    height: 70px;
+    padding:10px 2px 2px 2px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-out;
+    
+    background: rgba(0, 0, 0, 0);
+  
+    border-radius: 10px;
+  font-family: stretch;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    overflow-y: hidden;
+  z-index: 111;
+  
+  }
+  .list {
+    display: flex;
+    position: relative;
+    left: -100px;
+    font-size: 15px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-bottom: 30px;
+    z-index: 111;
+  
+  }
+  
+  .list li {
+    margin-left: 60px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px); /* Slight movement for a smooth effect */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1180px) {
+  
+  
+    nav {
+   
+  z-index: 11;
+  
+      
+      }
+  
+  
+  
+    .list {
+      display: none;
+      flex-direction: column;
+      background: rgba( 0, 0, 0, 0.3 );
+      
+      backdrop-filter: blur( 5px );
+      -webkit-backdrop-filter: blur( 5px );
+      border-radius: 10px;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      top: -40px;
+     left: 0.5px;
+     height: 100vh;
+      width: 100vw;
+      border-radius: 5px;
+      padding: 15px;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      z-index: 11;
+      font-family:stretch;
+      
+    }
+  
+    .list li {
+      padding: 10px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      left: -20px;
+      
+    }
+  
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .list {
+      display: flex;
+      animation: fadeIn 0.3s ease-in-out forwards;
+      visibility: visible;
+    }
+  /* Fade-out when unchecked */
+  #menu-toggle:not(:checked) + .menu-icon + .list {
+    opacity: 0;
+    visibility: hidden;
+  }
+    /* Show the hamburger icon */
+    .menu-icon {
+      display: block ;
+      position: relative;
+      right: 100px;
+      z-index: 1111;
+    }
+   .logoalex{
+    z-index: 1111;
+   }
+    /* Animate Hamburger to 'X' when active */
+    #menu-toggle:checked + .menu-icon span {
+      background: transparent;
+    }
+  
+    #menu-toggle:checked + .menu-icon::before {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  
+    #menu-toggle:checked + .menu-icon::after {
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg);
+    }
+  
+  
+  
+  
+  }
+  .contalex {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+   
+    transform: translate(-50%, -50%); /* Centers the element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjusts spacing between elements */
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+  .logo{
+  width: 100vw;
+  height: 100vh;
+  margin-left: 150px;
+  
+    }
+  }
+  
+    
+  @media (max-width: 700px) {
+    .logo{
+    width: 120vw;
+    height: 50vh;
+    
+    
+      }
+    }
+  
+  
+    @media (max-width: 450px) {
+      .logo{
+     margin-left: 215px;
+      
+      
+        }
+      }
+    
+  
+    @media (max-width: 700px) {
+  
+      .list{
+        width: 100%;
+      }
+    }
+
+
+    
+  .blogsec {
+    background: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(60, 67, 95), rgb(0, 0, 0)),
+                url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(150%);
+    font-family: 'stretch', sans-serif;
+    background-blend-mode: overlay;
+    display: block; /* Enables flexbox */
+
+
+    position: relative;
+    top: -150px;
+    padding: 20px;
+    font-size: 1rem;
+    border-bottom-left-radius: 80px; /* Adjust as needed */
+    border-bottom-right-radius: 80px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  .about4 {
+    font-family: 'stretch', sans-serif;
+    font-size: clamp(1.5rem, 7vw, 7rem); /* Responsive font size */
+    color: rgb(255, 255, 255); /* Transparent fill */
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0); /* White outline */
+    transition: color 0.3s ease-in-out, -webkit-text-stroke-color 0.3s ease-in-out;
+  
+    text-align: left;
+    margin: 0 0 50px 150px;
+    display: block;
+    width: fit-content;
+  }
+  
+
+  .about4:hover {
+    
+  
+    
+    color: rgba(0, 0, 0, 0); /* White fill */
+    -webkit-text-stroke: 3px rgb(255, 255, 255); /* Black outline */
+    transition: color 0.3s ease-in-out, -webkit-text-stroke-color 0.3s ease-in-out;
+  }
+  
+  
+  
+  
+  
+  /*blog*/
+
+
+
+  .ewan1{
+
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 3em 1em;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  
+  
+  
+  
+  
+  .bloggrid{
+    margin-left: 80px;
+  }
+  
+  
+  .divbody {
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 6rem;
+    background-color: #000000;
+  
+  }
+  @media (max-width: 60em) {
+    .divbody {
+      padding: 3rem;
+    }
+  }
+  
+  .bloggrid {
+ 
+    display: grid;
+    width: 100rem;
+  
+
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  @media (max-width: 60em) {
+    .bloggrid {
+      grid-gap: 3rem;
+    }
+  }
+
+
+
+
+
+  .bloggrid .blogcard {
+    display: flex;
+width: 80%;
+height: 90%;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 3rem;
+    border-color: white;
+    border-style: solid;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .bloggrid .blogcard:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  }
+  .bloggrid .blogcard__img {
+    display: block;
+    width: 100%;
+    height: 250px; /* or any value you prefer */
+    object-fit:cover;
+  }
+  .bloggrid .blogcard__content {
+    display: grid;
+    background-color: #000000;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 2rem;
+    padding: 2rem;
+    height: 80%;
+  }
+  .bloggrid .blogcard__header {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #ffffff;
+  }
+  .bloggrid .blogcard__text {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .bloggrid .blogcard__text-wrapper {
+   height: 5rem;
+  }
+
+
+
+
+  .bloggrid .blogcard__btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+
+    font-size: 0.7rem;
+    text-align: center;
+    font-size: clamp(1.4rem, 4vw, 1rem);
+    color: #5276ec;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .bloggrid .blogcard__btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  .bloggrid .blogcard__btn:hover, .bloggrid .blogcard__btn:active {
+    color: #ffffff;
+    background-color: #5881f1;
+  }
+  .bloggrid .card__btn:hover span, .bloggrid .blogcard__btn:active span {
+    margin-left: 1.5rem;
+  }
+  
+
+
+
+  @media screen and (max-width: 1263px) {
+  
+  
+
+    .bloggrid .blogcard__btn {
+        margin-bottom: 50px;
+
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1183px) {
+  
+  
+
+    .bloggrid .blogcard__btn {
+        margin-bottom: 50px;
+
+    }
+  }
+
+  
+
+
+
+  @media screen and (max-width: 1263px) {
+  
+  
+
+    .bloggrid  {
+        margin-left: 170px;
+
+    }
+  }
+
+
+
+  @media screen and (max-width: 1183px) {
+  
+  
+
+    .bloggrid  {
+        margin-left: 170px;
+
+    }
+  }
+
+
+
+  
+  @media screen and (max-width: 601px) {
+  
+  
+
+    .bloggrid  {
+        margin-right: 80px;
+
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 490px) {
+  
+  
+
+    .bloggrid  {
+      margin-left: 200px;
+      width: fit-content;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+

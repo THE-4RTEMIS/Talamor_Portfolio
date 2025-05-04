@@ -25,7 +25,7 @@ body{
   left: 90px;
   height: 7em;
   z-index: 11;
-
+  filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.5));
 }
 
 .logo1:hover {
@@ -143,9 +143,7 @@ z-index: 111;
 
 
 
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1180px) {
 
 
   nav {
@@ -154,11 +152,6 @@ z-index: 11;
 
     
     }
-
-
-
-
-
 
 
 
@@ -208,7 +201,7 @@ z-index: 11;
 }
   /* Show the hamburger icon */
   .menu-icon {
-    display: block;
+    display: block ;
     position: relative;
     right: 100px;
     z-index: 1111;
@@ -253,7 +246,7 @@ z-index: 11;
 .logo{
 width: 100vw;
 height: 100vh;
-margin-left: 130px;
+margin-left: 150px;
 
   }
 }
@@ -267,8 +260,23 @@ margin-left: 130px;
   
     }
   }
+
+
+  @media (max-width: 450px) {
+    .logo{
+   margin-left: 215px;
+    
+    
+      }
+    }
   
 
+  @media (max-width: 700px) {
+
+    .list{
+      width: 100%;
+    }
+  }
 
 
 
@@ -447,8 +455,8 @@ overflow: hidden;
               url(https://grainy-gradients.vercel.app/noise.svg);
   filter: contrast(150%);
   background-blend-mode: overlay;
-  display: flex; /* Enables flexbox */
-  align-items: center; /* Centers content vertically */
+  display: block; /* Enables flexbox */
+width: 105%;
   justify-content: space-between; /* Pushes text left, image right */
   position: relative;
   top: -200px;
@@ -457,9 +465,56 @@ overflow: hidden;
   overflow: hidden;
 }
 
+
+
+@media (max-width: 700px) {
+
+  .aboutsec{
+    font-size: 0.5rem;
+
+
+
+
+
+
+  }
+  .aboutme{
+    margin-top: 250px;
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+
+  .aboutsec{
+    margin-left: -70px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+
+
+  .aboutsec{
+    margin-left: -80px;
+    font-size: 0.4rem;
+  }
+
+
+
+}
+
+
+
+
 /* Container for text */
 .about-content {
-  width: 60%;
+  width: 100%;
+  
 }
 
 /* Styles the image */
@@ -488,13 +543,13 @@ overflow: hidden;
     transform: translateY(-55%)  /* Moves up & rotates */
   }
 }
-.about {
+.about0 {
 
   text-transform: uppercase;
   display: block;
   position: relative;
   left: 100px;
-  width: 120%;
+  width: 100%;
   will-change: filter;
 
   z-index: 11111;
@@ -505,7 +560,7 @@ overflow: hidden;
 }
 
 
-.about:hover {
+.about0:hover {
 
  
   color: rgba(255, 255, 255, 0); /* White fill */
@@ -568,6 +623,11 @@ margin-bottom: 120px;
 }
 
 
+@media (max-width: 450px) {
+.aboutme{
+  font-size: 1rem;
+}
+}
 
 .nutshell {
   position: relative;
@@ -582,8 +642,8 @@ top: -300px;
   width: 100%;
   z-index: 1111;
 overflow: hidden;
-border-top-left-radius: 80px; /* Adjust as needed */
-border-top-right-radius: 80px;
+border-radius: 80px; /* Adjust as needed */
+
    /* Background image properties */
    background-image: url('./assets/inanutshell.png'); /* Set background image */
    background-size: cover; /* Make sure the image covers the whole div */
@@ -623,11 +683,48 @@ color: white;
 
 
 .ewan{
-  background-color: red;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 3em 1em;
   height: 100vh;
   width: 100vw;
 }
 
+
+ul { list-style: none; margin: 0; padding: 0;}
+figure { margin: 0; }
+figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4; }
+
+
+.grid {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: 90%; 
+  grid-gap: 1em;
+  overflow-x: scroll; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 2em 1em;
+  background: rgb(0, 0, 0);
+  
+  @media all and (min-width: 600px) {
+    grid-auto-flow: initial; 
+    grid-template-columns: repeat(auto-fit, minmax(auto,20em)); 
+    justify-content: center; 
+  }
+  
+
+  }
+
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+
+  
 .overlay {
   position: absolute;
   top: 50%; /* Centering vertically */

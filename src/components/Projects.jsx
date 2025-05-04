@@ -1,20 +1,14 @@
 import { useState } from "react";
 
-import spicy2 from "../assets/SPICYSTUDIOSSTAR1.png";
-import spicy3 from "../assets/SPICYSTUDIOSSTAR2.png";
-import overlay from "../assets/overlay2.png";
 
 
 
 
-import alexLogo from "../assets/SPICYSTUDIOSLOGO.png";
+
 import alexLogo1 from "../assets/SPICYSTUDIOSWHITE.png";
-import project1 from "../assets/projects/alex_divider.png";
-import project2 from "../assets/projects/alexblend.png";
 import project3 from "../assets/projects/belnd.png";
 import project4 from "../assets/projects/donut.png";
 import project6 from "../assets/projects//motomami.png";
-import project7 from "../assets/projects/poster.png";
 import project8 from "../assets/projects/Talamor_Collage.png";
 import project9 from "../assets/projects/TALAMOR_FLYER.png";
 import project10 from "../assets/projects/Talamor_AdvocacyPoster.png";

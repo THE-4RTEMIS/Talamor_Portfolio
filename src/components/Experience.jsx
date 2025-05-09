@@ -77,6 +77,11 @@ const Projects = () => {
   </NavLink>
   </li>
 
+  <li>
+  <a href="https://drive.google.com/drive/folders/120V8HfIwN3rpQ0FeSH0XdHZN0_JVvUvH?usp=sharing" target="_blank" rel="noopener noreferrer">
+    CERTIFICATES
+  </a>
+</li>
 
   <li>
   <NavLink

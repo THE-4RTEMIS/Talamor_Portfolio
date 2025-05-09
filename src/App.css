@@ -471,7 +471,7 @@ overflow: hidden;
 .word-slide img {
   object-fit: cover;
   overflow: visible;
-  height: 60px;
+ 
   margin: 0 10px;
   padding: 53px;
   z-index: -111;
@@ -480,12 +480,10 @@ overflow: hidden;
 
 /*about me*/
 .aboutsec {
-
-  filter: contrast(150%);
-  background-blend-mode: overlay;
-  display: block; /* Enables flexbox */
+background-color: #000000;
+  display: block; 
 width: 105%;
-  justify-content: space-between; /* Pushes text left, image right */
+  justify-content: space-between; 
   position: relative;
   top: -200px;
   padding: 20px;
@@ -780,3 +778,5 @@ figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4
   z-index: 9999; /* Ensures it appears above the background */
   pointer-events: none; /* Makes sure it doesn't interfere with user interactions */
 }
+
+
